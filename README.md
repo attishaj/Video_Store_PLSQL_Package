@@ -3,21 +3,25 @@ Built a PL/SQL-based application to insert and update records in a video rental 
 The database consisted of the following essential tables:
 
 MEMBER(MEMBER_ID*, NMEMBER_NAME, EMAIL, PHONE_NUMBER, REGISTRATION_DATE, EXPIRATION_DATE, LAST_UPDATE_DATE);
+
 VIDEO(VIDEO_ID*, VIDEO_NAME, FORMAT, PUBLISH_DATE, MAXIMUM_CHECKOUT_DAYS);
+
 VIDEO_COPY(VIDEO_COPY_ID*, VIDEO_ID, STATUS);
+
 VIDEO_RENTAL_RECORD(MEMBER_ID**, VIDEO_COPY_ID**, CHECKOUT_DATE*, DUE_DATE, RETURN_DATE);
 
 Notes: 
-* indicates primary key
-** indicates foreign key relationship
+ * indicates primary key
+ ** indicates foreign key relationship
 
 Tasks included:
 1. Creating a procedure called member_registration to add a new member to the MEMBER table. 
+
 Must consider the following cases:
-  -The p_member_name is empty.
-  -The p_email is empty.
-  -The value of p_registration_date is greater than the current date. 
-  -The value of p_registration_date is greater than the value of p_expiration_date.
+  a. The p_member_name is empty.
+  b. The p_email is empty.
+  c. The value of p_registration_date is greater than the current date. 
+  d. The value of p_registration_date is greater than the value of p_expiration_date.
 
 2. Creating a procedure called update_expiration_date to update an existing member’s expiration date.  
 Must consider the following cases:
