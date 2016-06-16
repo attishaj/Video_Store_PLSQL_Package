@@ -8,13 +8,13 @@ VIDEO(VIDEO_ID*, VIDEO_NAME, FORMAT, PUBLISH_DATE, MAXIMUM_CHECKOUT_DAYS);
 
 VIDEO_COPY(VIDEO_COPY_ID*, VIDEO_ID, STATUS);
 
-VIDEO_RENTAL_RECORD(MEMBER_ID**, VIDEO_COPY_ID**, CHECKOUT_DATE*, DUE_DATE, RETURN_DATE);
+VIDEO_RENTAL_RECORD(MEMBER_ID*^, VIDEO_COPY_ID*^, CHECKOUT_DATE*, DUE_DATE, RETURN_DATE);
 
 Notes: 
 
 *indicates primary key
 
-**indicates foreign key relationship
+^indicates foreign key relationship
 
 
 Tasks included:
