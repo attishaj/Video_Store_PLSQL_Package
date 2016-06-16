@@ -10,9 +10,7 @@ VIDEO_COPY(**VIDEO_COPY_ID**, VIDEO_ID, STATUS);
 
 VIDEO_RENTAL_RECORD(**MEMBER_ID** * , **VIDEO_COPY_ID** * , **CHECKOUT_DATE** *, DUE_DATE, RETURN_DATE);
 
-Notes: 
-
-*indicates foreign key relationship
+Note:  * indicates foreign key relationship
 
 
 Tasks included:
