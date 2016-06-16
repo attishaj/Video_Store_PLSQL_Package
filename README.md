@@ -39,7 +39,7 @@ Tasks included:
     b. The value of p_member_id is in the MEMBER_ID column of the MEMBER table.
 
 
-3.) Creating a procedure called video_search to search a video and display the name, copy ID, format, and status of the video’s     copies. In addition, the checkout dates and due dates are also displayed for unreturned copies. The damaged copies (STATUS     = 'D') are excluded in your output. Sort your output by the video name (NAME) and then the copy ID (VIDEO_COPY_ID).
+3.) Creating a procedure called video_search to search a video and display the name, copy ID, format, and status of the video’s     copies. In addition, the checkout dates and due dates are also displayed for unreturned copies. The damaged copies (STATUS     = 'D') are excluded in the output. Output is sorted by video name (NAME) and then copy ID (VIDEO_COPY_ID).
 
 4.) Creating a procedure called video_checkout to record a new rental. When the video is successfully checked out, need to     
     insert a new record into the VIDEO_RENTAL_RECORD table and update the corresponding record in the VIDEO_COPY table. Otherwise, the action is denied. 
@@ -54,7 +54,7 @@ Tasks included:
   
     d. The value of p_video_checkout_date is greater than the current date. 
   
-    e. Checkout periods are determined by the values in the MAXIMUM_CHECKOUT_DAYS column. The due date is p_video_checkout_date plus the corresponding MAXIMUM_CHECKOUT_DAYS. Hard coding (e.g., 3, 7, or 14) is not allowed. 
+    e. Checkout periods are determined by the values in the MAXIMUM_CHECKOUT_DAYS column. The due date is p_video_checkout_date plus the corresponding MAXIMUM_CHECKOUT_DAYS.
   
     f. A member may have up to seven (7) copies checked out at any one time. 
   
@@ -67,13 +67,13 @@ Tasks included:
 
     a. The value of p_video_copy_id does not exist in the corresponding column of the VIDEO_COPY table.
 
-    b. The status of that copy is not “R”.
+    b. The status of that copy is not 'R'.
 
     c. The value of p_video_return_date is greater than the current date. 
 
 
 6.) Creating a procedure called print_unreturned_video to retrieve all the copies that a member hasn't returned. The output 
-    should include the member's ID, name, expiration date, first checkout date, last checkout date, the number of unreturned copies, video name, copy ID, format, checkout date, and due date of the rentals. Sort the data by due date and then the video name.
+    includes the member's ID, name, expiration date, first checkout date, last checkout date, the number of unreturned copies, video name, copy ID, format, checkout date, and due date of the rentals. Output is sorted by due date and then video name.
 
 7.) Grouping all the above subprograms (member_registration, update_expiration_date, video_search, video_checkout, 
     video_return, and print_unreturned_video) together in a package (package specification and package body) called video_pkg. 
