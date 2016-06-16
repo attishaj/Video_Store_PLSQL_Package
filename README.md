@@ -60,8 +60,7 @@ Tasks included:
   
     g. Before a member returns a copy, he/she cannot rent a second copy of the same video (VIDEO_ID). 	
 
-5.) Creating a procedure called video_return to change the rental status for that returned copy. When the copy is successfully     checked in, need to update the corresponding records in the VIDEO_RENTAL_RECORD and VIDEO_COPY tables. Otherwise, the     
-    action is denied. 
+5.) Creating a procedure called video_return to change the rental status for that returned copy. When the copy is successfully     checked in, need to update the corresponding records in the VIDEO_RENTAL_RECORD and VIDEO_COPY tables. Otherwise, the          action is denied. 
 
     Must consider the following cases:
 
