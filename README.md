@@ -2,7 +2,7 @@
 Built a PL/SQL-based application to insert and update records in a video rental store database and generate various reports. 
 The database consisted of the following tables:
 
-MEMBER(*MEMBER_ID*, NMEMBER_NAME, EMAIL, PHONE_NUMBER, REGISTRATION_DATE, EXPIRATION_DATE, LAST_UPDATE_DATE);
+MEMBER(**MEMBER_ID**, NMEMBER_NAME, EMAIL, PHONE_NUMBER, REGISTRATION_DATE, EXPIRATION_DATE, LAST_UPDATE_DATE);
 
 VIDEO(VIDEO_ID*, VIDEO_NAME, FORMAT, PUBLISH_DATE, MAXIMUM_CHECKOUT_DAYS);
 
